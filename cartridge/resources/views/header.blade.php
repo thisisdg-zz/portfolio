@@ -14,7 +14,8 @@
         <div class="content left">
             <div class="links">
                 <!--href="{{ url('/developer/developer-profile') }}"-->
-                <a href="{{ route('developer-profile') }}">Developer Profile</a>
+                <a href="{{ route('resume') }}">Developer Profile</a>
+                <a href="{{ route('devstory') }}">Developer Profile</a>
                 <a href="index/developer/developer-profile">Developer Profile</a>
                 <a href="{{ url('/developer/developer-story') }}">Developer Story</a>
                 <a href="javascript:void(0)">Blog</a>
