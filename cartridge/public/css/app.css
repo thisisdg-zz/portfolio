@@ -10533,9 +10533,112 @@ body {
   margin-top: 30px;
 }
 
+.menu-toggle-closed {
+  background-color: transparent;
+  border: none;
+  height: 23px;
+  width: 23px;
+  padding: 0;
+}
+
+.menu-toggle-closed span {
+  height: 1px;
+  display: block;
+  width: 100%;
+  background-color: black;
+  margin: 5px 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.header-color {
+  background-color: #e1e4ea;
+}
+
+.header-border {
+  border-bottom: 2px solid #d0d3db;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.items-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.marginal-display {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/*.height-body-excluding-header{
+    height: calc(100% - 85px);
+}*/
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.border-bottom-not-header > li {
+  border-bottom: 2px solid rgba(137, 137, 137, 0.51);
+}
+
+.border-bottom-not-header > li:first-child {
+  border-top: 2px solid rgba(137, 137, 137, 0.51);
+}
+
+.a-little-inside {
+  padding-left: 25px;
+  position: relative;
+  background: rgba(204, 198, 198, 0.34);
+}
+
+.a-little-inside::before {
+  content: '';
+  background: rgba(195, 75, 75, 0.34);
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  left: 0;
+}
+
+.list-without-bullets {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects-list li {
+  padding-top: 12px;
+}
+
+.projects-list li .projects-container > h1 {
+  font-size: 24px;
 }
 

@@ -1,0 +1,62 @@
+.flex-box{
+	display: flex;
+}
+
+.items-align-center{
+	align-items: center;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.marginal-display{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.heading{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+/*.height-body-excluding-header{
+    height: calc(100% - 85px);
+}*/
+
+.margin-top-50{
+	margin-top: 50px
+}
+
+.border-bottom-not-header > li{
+	border-bottom: 2px solid $heading-border-color-rgb-grey;
+}
+
+.border-bottom-not-header > li:first-child{
+	border-top: 2px solid $heading-border-color-rgb-grey;
+}
+
+.a-little-inside{
+	padding-left: 25px;
+	position: relative;
+	background: $a-little-inside-data-background-glass-rgba;
+
+	&::before{
+		content: '';
+		background: $a-little-inside-padding-red-rgba;
+		position: absolute;
+		height: 100%;
+		width: 20px;
+		left: 0;
+	}
+}
+
+.list-without-bullets{
+	list-style-type: none;
+	padding-left: 0px;
+}

@@ -15,17 +15,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('developer-profile',[
-	'as' => 'developer-profile',
-	'uses' => 'RedirectionLinks@pleaseRedirect'
-]);
-
 Route::get('resume',[
 	'as' => 'resume',
 	'uses' => 'RedirectionLinks@pleaseRedirect'
 ]);
 
-Route::get('devstory',[
-	'as' => 'devstory',
-	'uses' => 'RedirectionLinks@devStory'
+Route::get('devprofile',[
+	'as' => 'devprofile',
+	'uses' => 'RedirectionLinks@devProfile'
 ]);

@@ -1,0 +1,28 @@
+.menu-toggle-closed{
+	background-color: transparent;
+	border: none;
+	height: 23px;
+	width:23px;
+	padding: 0;
+
+
+	span{
+		height: 1px;
+		display: block;
+		width: 100%;
+		background-color: black;
+		margin: 5px 0;
+	}
+}
+
+button:focus{
+	outline: none;
+}
+
+.header-color{
+	background-color: $heading-color-grey;
+}
+
+.header-border{
+	border-bottom: 2px solid $heading-border-color-grey;
+}

@@ -18,7 +18,7 @@
 			return view('developer.resume');
 		}
 
-		public function devStory() {
+		public function devProfile() {
 			return view('developer.devstory');
 		}
 	}

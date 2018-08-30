@@ -17,16 +17,16 @@
     <body>
         @include('header')
 
-        @include('project-links')
+        @include('projectLinks')
 
         @include('footer')
 
         <!--
 
-            @include('developer/developer-profile')
-            @include('developer/developer-story')
+            @include('developer/devprofile')
+            @include('developer/devstory')
             @include('developer/resume')
-            @include('interactive-animations')
+            @include('interactiveAnimations')
             @include('developer/contact-me')
         
         -->

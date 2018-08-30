@@ -9,9 +9,16 @@
 @import '~bootstrap/scss/bootstrap';
 
 //Index page css
-@import 'index';
+@import 'pages/index';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+//Import header css
+@import 'includes/header';
+
+//Import global css
+@import 'global';
+
+//Import project links css
+@import 'includes/projectslinks';
+
+//Import project includes css
+@import 'includes/projects';
