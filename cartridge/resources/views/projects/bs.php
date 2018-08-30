@@ -1,6 +1,6 @@
 <div class="projects-container">
-	<h1>Best Seller</h1>
-	<span>Description (Multiple Brands, write accordingly)</span>
+	<h1>Best Seller<span class="drop-down-arrow-closed"><i class="fas fa-chevron-down"></i></span></h1>
+	<p class="description-background full-width adjust-properties">Description (Multiple Brands, write accordingly)</p>
 	<div class="a-little-inside">
 		<ul class="list-without-bullets">
 			<li><span>Duration: </span><span>Some Duration</span></li>

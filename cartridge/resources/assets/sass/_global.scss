@@ -60,3 +60,14 @@
 	list-style-type: none;
 	padding-left: 0px;
 }
+
+.drop-down-arrow-closed{
+	font-size: 22px;
+	color: $typing-black;
+	float: right;
+	padding-right: 25px;
+}
+
+.description-background{
+	background: $description-background-rgba;
+}
