@@ -66,4 +66,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## New Dependencies
 
-You need Laravel elixir and jquery 3.3.1 to proceed with this project.
+You need Laravel elixir and jquery 3.3.1 to proceed with this project. Also gulpfile is written to compile JS files, but watch server is not available. For SCSS compilation use npm run watch.
