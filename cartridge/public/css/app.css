@@ -10628,6 +10628,7 @@ button:focus {
   padding-left: 0px;
 }
 
+.drop-down-arrow-open,
 .drop-down-arrow-closed {
   font-size: 22px;
   color: #636b6f;

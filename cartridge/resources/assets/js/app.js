@@ -5,18 +5,37 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
 
-window.Vue = require('vue');
+
+//window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+/*
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
     el: '#app'
+});
+*/
+require('./bootstrap');
+
+let $ = require('jquery');
+
+$("body").on("click", ".drop-down-arrow-open i", function(){
+	let thisParent = $(this).closest(".projects-container").find(".needed-while-hiding");
+	thisParent.slideUp();
+
+	$(this).closest(".drop-down-arrow-open").removeClass("drop-down-arrow-open").addClass("drop-down-arrow-closed");
+	$(this).removeClass("fa-chevron-down").addClass("fa-chevron-right");
+});
+
+$("body").on("click", ".drop-down-arrow-closed i", function(){
+	let thisParent = $(this).closest(".projects-container").find(".needed-while-hiding");
+	thisParent.slideDown();
+	$(this).closest(".drop-down-arrow-closed").removeClass("drop-down-arrow-closed").addClass("drop-down-arrow-open");
+	$(this).removeClass("fa-chevron-right").addClass("fa-chevron-down");
 });
