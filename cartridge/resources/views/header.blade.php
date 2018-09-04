@@ -5,7 +5,7 @@
             <span></span>
             <span></span>
         </button>
-        <div class="flex-center sticky-top m-b-md m-t-md full-width">
+        <div class="flex-center sticky-top m-b-md-reduced m-t-md-reduced full-width">
             <div class="position-ref">
                 @if (Route::has('login'))
                     <div class="top-right links">
@@ -17,7 +17,10 @@
                         @endauth
                     </div>
                 @endif
-                <div class="content left">
+                
+                @include('svg/logo_svg')
+
+                <div class="slide-menu-top content left hide">
                     <div class="links">
                         <a href="{{ route('devprofile') }}">Developer Profile</a>
                         <a href="{{ url('/developer/developer-story') }}">Developer Story</a>

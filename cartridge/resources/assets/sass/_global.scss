@@ -65,9 +65,38 @@
 	font-size: 22px;
 	color: $typing-black;
 	float: right;
-	padding-right: 25px;
+	margin-right: 25px;
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+	text-align: center;
+
+	i{
+		padding: 1px;
+	}
+
+	&:hover{
+		background-color: $buttons-on-hover;
+		border-radius: 50%;
+	}
 }
 
 .description-background{
 	background: $description-background-rgba;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+.m-t-md-reduced{
+	margin-top: 16.5px;
+}
+
+.m-b-md-reduced{
+	margin-bottom: 16.5px;
 }
