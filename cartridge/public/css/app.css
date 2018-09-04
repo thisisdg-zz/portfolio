@@ -10633,11 +10633,42 @@ button:focus {
   font-size: 22px;
   color: #636b6f;
   float: right;
-  padding-right: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+}
+
+.drop-down-arrow-open i,
+.drop-down-arrow-closed i {
+  padding: 1px;
+}
+
+.drop-down-arrow-open:hover,
+.drop-down-arrow-closed:hover {
+  background-color: rgba(126, 133, 131, 0.1);
+  border-radius: 50%;
 }
 
 .description-background {
   background: rgba(36, 141, 198, 0.33);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.m-t-md-reduced {
+  margin-top: 16.5px;
+}
+
+.m-b-md-reduced {
+  margin-bottom: 16.5px;
 }
 
 .projects-list {

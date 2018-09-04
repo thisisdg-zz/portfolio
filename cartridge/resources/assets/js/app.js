@@ -28,14 +28,26 @@ let $ = require('jquery');
 $("body").on("click", ".drop-down-arrow-open i", function(){
 	let thisParent = $(this).closest(".projects-container").find(".needed-while-hiding");
 	thisParent.slideUp();
-
 	$(this).closest(".drop-down-arrow-open").removeClass("drop-down-arrow-open").addClass("drop-down-arrow-closed");
 	$(this).removeClass("fa-chevron-down").addClass("fa-chevron-right");
-});
-
-$("body").on("click", ".drop-down-arrow-closed i", function(){
+})
+.on("click", ".drop-down-arrow-closed i", function(){
 	let thisParent = $(this).closest(".projects-container").find(".needed-while-hiding");
 	thisParent.slideDown();
 	$(this).closest(".drop-down-arrow-closed").removeClass("drop-down-arrow-closed").addClass("drop-down-arrow-open");
 	$(this).removeClass("fa-chevron-right").addClass("fa-chevron-down");
+})
+.on("click", ".menu-toggle-closed", function(){
+	var menuTop = $("header div.slide-menu-top");
+	var svgLogo = $("header svg");
+	var headerContainer = $("header .flex-box .flex-center");
+	if(menuTop.hasClass("hide")){
+		menuTop.removeClass("hide").addClass("show");
+		svgLogo.removeClass("show").addClass("hide");
+		headerContainer.removeClass("m-t-md-reduced m-b-md-reduced").addClass("m-t-md m-b-md");
+	}else{
+		menuTop.removeClass("show").addClass("hide");
+		svgLogo.removeClass("hide").addClass("show");
+		headerContainer.removeClass("m-t-md m-b-md").addClass("m-t-md-reduced m-b-md-reduced");
+	}
 });
