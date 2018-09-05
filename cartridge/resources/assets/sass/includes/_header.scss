@@ -26,3 +26,23 @@ button:focus{
 .header-border{
 	border-bottom: 2px solid $heading-border-color-grey;
 }
+
+.top-span, .bottom-span{
+	position: absolute;
+	transition: 0.15s ease-in-out;
+}
+
+.top-span{
+	transform: rotate(45deg);
+}
+
+.bottom-span{
+	transform: rotate(-45deg);
+	bottom: 5px;
+}
+
+.middle-span{
+	width: 0%;
+	opacity: 0;
+	transition: 0.15s ease-in-out;
+}

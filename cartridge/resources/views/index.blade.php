@@ -24,6 +24,10 @@
         </div>
         @include('projectLinks')
 
+        @include('experience')
+
+        @include('skills')
+
         @include('footer')
 
         <!--

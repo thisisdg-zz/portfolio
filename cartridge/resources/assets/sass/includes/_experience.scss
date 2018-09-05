@@ -1,0 +1,23 @@
+.experience-record{
+    background: $experience-record-background;
+    padding-left: 15px;
+	
+	.experience-description{
+		height: 150px;
+		padding-left: 15px;
+
+		p:first-child{
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	.experience-description > p {
+	    margin-bottom: 0;
+	    line-height: calc(150px / 4);
+
+	    span{
+	    	font-weight: bold;
+	    }
+	}
+}

@@ -1,6 +1,6 @@
 <header class="header-color header-border">
     <div class="flex-box marginal-display items-align-center">
-        <button class="menu-toggle-closed">
+        <button class="menu-toggle-closed position-relative">
             <span></span>
             <span></span>
             <span></span>
