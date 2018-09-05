@@ -41,13 +41,20 @@ $("body").on("click", ".drop-down-arrow-open i", function(){
 	var menuTop = $("header div.slide-menu-top");
 	var svgLogo = $("header svg");
 	var headerContainer = $("header .flex-box .flex-center");
+
 	if(menuTop.hasClass("hide")){
 		menuTop.removeClass("hide").addClass("show");
 		svgLogo.removeClass("show").addClass("hide");
 		headerContainer.removeClass("m-t-md-reduced m-b-md-reduced").addClass("m-t-md m-b-md");
+		$(this).find("span:first-child").addClass("top-span");
+		$(this).find("span:nth-child(2)").addClass("middle-span");
+		$(this).find("span:last-child").addClass("bottom-span");
 	}else{
 		menuTop.removeClass("show").addClass("hide");
 		svgLogo.removeClass("hide").addClass("show");
 		headerContainer.removeClass("m-t-md m-b-md").addClass("m-t-md-reduced m-b-md-reduced");
+		$(this).find("span:first-child").removeClass("top-span");
+		$(this).find("span:nth-child(2)").removeClass("middle-span");
+		$(this).find("span:last-child").removeClass("bottom-span");
 	}
 });
