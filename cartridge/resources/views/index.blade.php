@@ -29,15 +29,6 @@
         @include('skills')
 
         @include('footer')
-
-        <!--
-
-            @include('developer/devprofile')
-            @include('developer/devstory')
-            @include('developer/resume')
-            @include('interactiveAnimations')
-            @include('developer/contact-me')
         
-        -->
     </body>
 </html>

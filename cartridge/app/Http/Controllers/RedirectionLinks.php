@@ -19,6 +19,14 @@
 		}
 
 		public function devProfile() {
+			return view('developer.devprofile');
+		}
+
+		public function redirectHome() {
+			return view('index');
+		}
+
+		public function devStory() {
 			return view('developer.devstory');
 		}
 	}

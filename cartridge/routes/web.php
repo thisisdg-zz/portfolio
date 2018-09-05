@@ -20,7 +20,17 @@ Route::get('resume',[
 	'uses' => 'RedirectionLinks@pleaseRedirect'
 ]);
 
+Route::get('home',[
+	'as' => 'home',
+	'uses' => 'RedirectionLinks@redirectHome'
+]);
+
 Route::get('devprofile',[
 	'as' => 'devprofile',
 	'uses' => 'RedirectionLinks@devProfile'
+]);
+
+Route::get('devstory',[
+	'as' => 'devstory',
+	'uses' => 'RedirectionLinks@devStory'
 ]);

@@ -1,6 +1,6 @@
 <footer class="header-color full-width">
 	<div class="marginal-display footer-body">
-		<p>&copy;   Designed by DHRUV GOEL (5th September, 2018)</p>
+		<p>&copy;   Designed by <a href = "{{ route('devstory') }}">DHRUV GOEL</a> (5th September, 2018)</p>
 	</div>
 	
 	<script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>

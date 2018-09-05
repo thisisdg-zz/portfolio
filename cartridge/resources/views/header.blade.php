@@ -1,3 +1,6 @@
+<?php
+    ini_set('memory_limit', '-1'); //Sets the maximum limit of the PHP as infinite
+?>
 <header class="header-color header-border">
     <div class="flex-box marginal-display items-align-center">
         <button class="menu-toggle-closed position-relative">
@@ -18,12 +21,12 @@
                     </div>
                 @endif
                 
-                @include('svg/logo_svg')
+                <a href="{{ route('home') }}">@include('svg/logo_svg')</a>
 
                 <div class="slide-menu-top content left hide">
                     <div class="links">
                         <a href="{{ route('devprofile') }}">Developer Profile</a>
-                        <a href="{{ url('/developer/developer-story') }}">Developer Story</a>
+                        <a href="{{ route('devstory') }}">Developer Story</a>
                         <a href="javascript:void(0)">Blog</a>
                         <a href="{{ url('/developer/contact-me') }}">Contact Me</a>
                     </div>
