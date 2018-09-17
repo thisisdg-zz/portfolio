@@ -10826,6 +10826,18 @@ a.github:hover {
   padding-left: 25px;
 }
 
+.remove-text-decoration {
+  text-decoration: none;
+  color: #636b6f;
+}
+
+.remove-text-decoration:hover,
+.remove-text-decoration:active,
+.remove-text-decoration:visited {
+  text-decoration: none;
+  color: #636b6f;
+}
+
 .projects-list {
   list-style-type: none;
   padding: 0;

@@ -235,3 +235,13 @@ a.github{
 	font-family: 'Lucida Console';
 	padding-left: 25px;
 }
+
+.remove-text-decoration{
+	text-decoration: none;
+	color: $typing-black;
+
+	&:hover, &:active, &:visited{
+		text-decoration: none;
+		color: $typing-black;
+	}
+}
