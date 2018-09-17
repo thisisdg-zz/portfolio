@@ -14,12 +14,19 @@
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}" />
     </head>
     
-    <body>
+    <body class="position-relative">
         @include('header')
 		
-        @include('developer/devstorycontent')
-
-		@include('footer')
-		
+		<div class="marginal-display margin-top-50">
+            <h1 class="heading">Contact Info:</h1>
+			<ul class="border-bottom-not-header projects-list">
+				<li>@include('developer/contactmecall')</li>
+				<li>@include('developer/contactmelinks')</li>
+				<!--<li class="last-form">@include('developer/contactmeform')</li>-->
+			</ul>
+    	</div>
+        
+        @include('footer')
+    
     </body>
 </html>

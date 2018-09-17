@@ -16,10 +16,9 @@
     
     <body>
         @include('header')
-		
-        @include('developer/devstorycontent')
 
-		@include('footer')
-		
+        <div class="coming-soon full-height"></div>
+
+        @include('footer')
     </body>
 </html>

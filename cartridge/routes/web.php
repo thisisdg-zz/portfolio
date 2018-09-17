@@ -20,7 +20,32 @@ Route::get('resume',[
 	'uses' => 'RedirectionLinks@pleaseRedirect'
 ]);
 
+Route::get('home',[
+	'as' => 'home',
+	'uses' => 'RedirectionLinks@redirectHome'
+]);
+
 Route::get('devprofile',[
 	'as' => 'devprofile',
 	'uses' => 'RedirectionLinks@devProfile'
+]);
+
+Route::get('devstory',[
+	'as' => 'devstory',
+	'uses' => 'RedirectionLinks@devStory'
+]);
+
+Route::get('contactme',[
+	'as' => 'contactme',
+	'uses' => 'RedirectionLinks@contactMe'
+]);
+
+Route::get('ComingSoon',[
+	'as' => 'ComingSoon',
+	'uses' => 'RedirectionLinks@pageUnderConstruction'
+]);
+
+Route::get('laravel', [
+	'as' => 'laravel',
+	'uses' => 'RedirectionLinks@dependencies'
 ]);

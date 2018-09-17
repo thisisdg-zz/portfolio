@@ -1,8 +1,8 @@
 <footer class="header-color full-width">
 	<div class="marginal-display footer-body">
-		<p>&copy;   Designed by DHRUV GOEL (5th September, 2018)</p>
+		<p>&copy;   Designed by <a href = "{{ route('home') }}">DHRUV GOEL</a> (16th September, 2018)<a class="float-right" href="{{ route('laravel') }}"><span><img src="{{ URL::asset('img/laravel_icon.png') }}"/>LARAVEL</span></a></p>
 	</div>
 	
 	<script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </footer>

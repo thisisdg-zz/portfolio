@@ -10476,7 +10476,7 @@ body {
   background-color: #fff;
   color: #636b6f;
   font-family: 'Nunito', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -10538,6 +10538,7 @@ body {
   height: 23px;
   width: 23px;
   padding: 0;
+  cursor: pointer;
 }
 
 .menu-toggle-closed span {
@@ -10575,7 +10576,7 @@ button:focus {
 .bottom-span {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  bottom: 5px;
+  bottom: 6px;
 }
 
 .middle-span {
@@ -10625,7 +10626,7 @@ button:focus {
   margin-top: 50px;
 }
 
-.border-bottom-not-header > li {
+.border-bottom-not-header > li:not(.last-form) {
   border-bottom: 2px solid rgba(137, 137, 137, 0.51);
 }
 
@@ -10645,6 +10646,21 @@ button:focus {
   position: absolute;
   height: 100%;
   width: 20px;
+  left: 0;
+}
+
+.a-little-more-inside {
+  padding-left: 40px;
+  position: relative;
+  background: rgba(204, 198, 198, 0.34);
+}
+
+.a-little-more-inside::before {
+  content: '';
+  background: rgba(195, 75, 75, 0.34);
+  position: absolute;
+  height: 100%;
+  width: 35px;
   left: 0;
 }
 
@@ -10729,6 +10745,87 @@ button:focus {
 	}
 }*/
 
+.custom-bullet {
+  background: black;
+  color: white;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.font-top-heading-40 {
+  font-size: 40px;
+}
+
+.p-b-md {
+  padding-bottom: 5px;
+}
+
+.p-l-md {
+  padding-left: 25px;
+}
+
+.submit-button {
+  border-radius: 8px;
+  border: 2px solid rgba(152, 25, 25, 0.77);
+  color: white;
+  background: rgba(152, 25, 25, 0.77);
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+.reduce-heading-font {
+  font-size: 28px;
+}
+
+a.linked-in:hover {
+  color: #0077B5;
+}
+
+a.quora:hover {
+  color: #AA2200;
+}
+
+a.stack-overflow:hover {
+  color: #FF9900;
+}
+
+a.github:hover {
+  color: #000000;
+}
+
+.coming-soon {
+  background: url("/img/coming_soon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .coming-soon {
+    background-size: 100% 100%;
+  }
+}
+
+.logo-frame {
+  border: 1px solid rgba(137, 137, 137, 0.51);
+}
+
+.story-content {
+  font-family: 'Lucida Console';
+  padding-left: 25px;
+}
+
 .projects-list {
   list-style-type: none;
   padding: 0;
@@ -10753,8 +10850,14 @@ button:focus {
 }
 
 .experience-record .experience-description {
-  height: 150px;
+  /*height: 150px;*/
   padding-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .experience-record .experience-description {
+    padding-left: 0;
+  }
 }
 
 .experience-record .experience-description p:first-child {
@@ -10772,6 +10875,25 @@ button:focus {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .experience-record {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .experience-record .company-thumb {
+    width: 100%;
+  }
+
+  .experience-record .company-thumb img {
+    width: 100%;
+  }
+}
+
 footer .footer-body p {
   margin: 0;
   font-size: 12px;
@@ -10780,5 +10902,53 @@ footer .footer-body p {
 
 .footer-border {
   border-top: 2px solid #d0d3db;
+}
+
+.form-container {
+  border: 15px solid #3D9970;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  resize: none;
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 2px solid rgba(121, 75, 153, 0.77);
+  outline: none;
+}
+
+.form-container button {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.social-media-icons {
+  font-size: 60px;
+  color: #e8e8e8;
+}
+
+.contact-me-links {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.contact-me-links span {
+  padding: 0 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-me-links span {
+    display: inline-block;
+    width: calc((100% / 2) - 2px);
+  }
 }
 
