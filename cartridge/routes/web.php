@@ -34,3 +34,18 @@ Route::get('devstory',[
 	'as' => 'devstory',
 	'uses' => 'RedirectionLinks@devStory'
 ]);
+
+Route::get('contactme',[
+	'as' => 'contactme',
+	'uses' => 'RedirectionLinks@contactMe'
+]);
+
+Route::get('ComingSoon',[
+	'as' => 'ComingSoon',
+	'uses' => 'RedirectionLinks@pageUnderConstruction'
+]);
+
+Route::get('laravel', [
+	'as' => 'laravel',
+	'uses' => 'RedirectionLinks@dependencies'
+]);

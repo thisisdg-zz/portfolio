@@ -17,7 +17,7 @@
     <body>
         @include('header')
 		
-		Developer Profile
+		<!--Import content here-->
 
 		@include('footer')
 		

@@ -33,7 +33,7 @@
 	margin-top: 50px
 }
 
-.border-bottom-not-header > li{
+.border-bottom-not-header > li:not(.last-form){
 	border-bottom: 2px solid $heading-border-color-rgb-grey;
 }
 
@@ -52,6 +52,21 @@
 		position: absolute;
 		height: 100%;
 		width: 20px;
+		left: 0;
+	}
+}
+
+.a-little-more-inside{
+	padding-left: 40px;
+	position: relative;
+	background: $a-little-inside-data-background-glass-rgba;
+
+	&::before{
+		content: '';
+		background: $a-little-inside-padding-red-rgba;
+		position: absolute;
+		height: 100%;
+		width: 35px;
 		left: 0;
 	}
 }
@@ -133,3 +148,90 @@
 		width: 20%;
 	}
 }*/
+
+.custom-bullet{
+	background: black;
+	color: white;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	display:inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.margin-bottom-20{
+	margin-bottom: 20px;
+}
+
+.font-top-heading-40{
+	font-size: 40px;
+}
+
+.p-b-md{
+	padding-bottom: 5px;
+}
+
+.p-l-md{
+	padding-left: 25px;
+}
+
+.submit-button{
+	border-radius: 8px;
+	border: 2px solid $button-background-color-red;
+	color: white;
+	background: $button-background-color-red;
+}
+
+.margin-0-auto{
+	margin: 0 auto;
+}
+
+.reduce-heading-font{
+	font-size: 28px;
+}
+
+a.linked-in{
+	&:hover{
+		color: $linked-in-icon-hover-color;
+	}
+}
+
+a.quora{
+	&:hover{
+		color: $quora-in-icon-hover-color;
+	}
+}
+
+a.stack-overflow{
+	&:hover{
+		color: $stack-overflow-in-icon-hover-color;
+	}
+}
+
+a.github{
+	&:hover{
+		color: $github-overflow-in-icon-hover-color;
+	}
+}
+
+.coming-soon{
+	background: url("/img/coming_soon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	@media screen and (max-width: 767px){
+		background-size: 100% 100%;
+	}
+}
+
+.logo-frame{
+	border: 1px solid $heading-border-color-rgb-grey;
+}
+
+.story-content{
+	font-family: 'Lucida Console';
+	padding-left: 25px;
+}

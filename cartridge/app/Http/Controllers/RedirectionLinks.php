@@ -29,5 +29,16 @@
 		public function devStory() {
 			return view('developer.devstory');
 		}
+
+		public function contactMe() {
+			return view('developer.contactme');
+		}
+
+		public function pageUnderConstruction(){
+			return view('comingsoon');
+		}
+		public function dependencies(){
+			return view('dependencies');
+		}
 	}
 ?>

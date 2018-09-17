@@ -25,10 +25,10 @@
 
                 <div class="slide-menu-top content left hide">
                     <div class="links">
-                        <a href="{{ route('devprofile') }}">Developer Profile</a>
+                        <a href="{{ route('home') }}">Developer Profile</a>
                         <a href="{{ route('devstory') }}">Developer Story</a>
-                        <a href="javascript:void(0)">Blog</a>
-                        <a href="{{ url('/developer/contact-me') }}">Contact Me</a>
+                        <a href="{{ route('ComingSoon') }}">Blog</a>
+                        <a href="{{ route('contactme') }}">Contact Me</a>
                     </div>
                 </div>
             </div>

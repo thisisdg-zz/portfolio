@@ -3,8 +3,12 @@
     padding-left: 15px;
 	
 	.experience-description{
-		height: 150px;
+		/*height: 150px;*/
 		padding-left: 15px;
+
+		@media screen and (max-width: 767px){
+			padding-left: 0;
+		}
 
 		p:first-child{
 			font-size: 14px;
@@ -19,5 +23,18 @@
 	    span{
 	    	font-weight: bold;
 	    }
+	}
+
+	@media screen and (max-width: 767px){
+	    flex-direction: column;
+    	box-sizing: border-box;
+
+    	.company-thumb{
+    		width: 100%;
+
+    		img{
+    			width: 100%;
+    		}
+    	}
 	}
 }
