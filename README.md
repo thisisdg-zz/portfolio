@@ -2,7 +2,7 @@
 
 ## Migrate/Run on Linux - MacOS
 
-** Assuming you have lampp/xampp stack installed **
+**Assuming you have lampp/xampp stack installed**
 
 1. Run the services i.e. _cd /opt/lampp/_
    _sudo ./xampp start_
